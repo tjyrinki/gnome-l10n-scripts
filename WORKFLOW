@@ -1,0 +1,27 @@
+
+Once:
+
+- gitcheckout.sh
+- checkout.sh <module> when needed
+
+Normal workflow:
+
+- gitupdate.sh
+  ^ Will reset all branches, clean non-committed files etc.
+    Not strictly needed, gitcommit.sh will also git pull --rebase.
+- Download attachments, for example via the AttachmentExtractor extension in Thunderbird.
+  Consider asking submission as attachments named project.branch.fi.po, for example gnome-sudoku.gnome-3-8.fi.po.
+- switch_to_master.sh or switch_to_3.8.sh to switch between branches
+- move_po.sh (or from wiki fetch_translations.sh)
+- gitcommit.sh
+  ^ In each diff, if not fit for commit, just press Enter to the "Commit?" question. Answer "y" to commit.
+    Pay attention to possible errors.
+
+Additional scripts:
+
+- Check out possible new files (untracked files):
+  varmistelua_gitstatus.sh
+
+- Check if all pushes were successful:
+  varmistelua_gitpush.sh
+
