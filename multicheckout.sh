@@ -1,5 +1,5 @@
 if [ "$1" != "" ] ; then
-  for i in $1 ; do
+  for i in $* ; do
   ./checkout.sh $i
   done
 else

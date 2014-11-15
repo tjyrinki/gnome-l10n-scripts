@@ -15,7 +15,7 @@ echo UI:
 echo
 
 for i in *.master.fi.po ; do
-#for i in *.gnome-3-2.fi.po ; do
+#for i in *.gnome-3-14.fi.po ; do
 #for i in *.gimp-2-8.fi.po ; do
   dir=$(echo $i | cut -d '.' -f 1)
   mv -vf $i $dir/po/fi.po

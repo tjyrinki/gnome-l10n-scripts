@@ -8,7 +8,7 @@ for dir in * ; do
     echo Now in directory: $dir
     git reset --hard
     git pull --rebase &
-    sleep 1
+    sleep 0.5
     #git clean -fxd
     cd $currdir
   fi
